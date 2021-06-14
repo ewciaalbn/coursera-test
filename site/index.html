@@ -5,45 +5,136 @@
 	<title>Senus Plus</title>
 </head>
 <style type="text/css">
-#backgroundimage {
-	background-repeat:
+body, html {
+	height: 100%;
+  margin: 0;}
+
+
+
+#welcome {
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
-.textinthemiddle {
+.Welcome_to {
 	position: absolute;
-	top: 40%;
-	left: 15%;
-	font-size: 50px;
-	font-family: garamond, serif;
-	font-weight: bolder;
-	color: navajowhite;
-
-
-}
-
-#findoutmore{
-
-	position: absolute;
-	top: 50%;
-	left: 45%;
-	font-size: 20px;
-	color: navajowhite;
-	font-family: garamond, serif;
-	border: solid;
-	border-color: white;
-	border-width: 2px;
-	height: 60px;
-	width: 170px;
+	top: 30%;
+	left: 38%;
+	font-size: 70px;
+	font-family: snell roundhand, serif;
+	font-weight: ;
+	font-style: oblique;
+	background: linear-gradient(to right, #0033cc,  #33cc33);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 	text-align: center;
+	animation: showup 5s infinite;
+	animation-iteration-count: 1;
+	display:inline-block;
+ 	overflow:hidden;
+  	white-space:nowrap;
+
+	}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:0;}
+    80% {opacity:1;}
+    100% {opacity:1;}
+
+} 
+#Companyname {
+
+	position: absolute;
+	top: 45%;
+	left: 32%;
+	font-size: 90px;
+	font-family: snell roundhand, serif;
+	font-style: oblique;
+	background: linear-gradient(to right, #0033cc,  #33cc33);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	text-align: center;
+	animation: reveal 15s infinite;
+	width: 0px;
+	display:inline-block;
+  	overflow:hidden;
+  	white-space:nowrap;
+  	animation-delay: 2s;
+  	animation-iteration-count: 1;
+
 }
+
+#Companyname span {
+
+	
+  animation: slidein 10s infinite;
+  animation-iteration-count: 1;
+
+
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px;}
+    35% { margin-left:-0px; }
+    100% { margin-left:-0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:500px;}
+    80% {opacity:1;}
+    100% {opacity:1;width:500px;}
+
+}
+
+#navigationbar {
+
+	position: absolute;
+	margin-top: 15px;
+	margin-left: 340px;
+}
+
+#navigationbar a {
+
+	font-size: 30px;
+	font-weight: lighter;
+	font-style: oblique;
+	text-decoration: none;
+	text-align: center;
+	margin-right: 20px;
+
+}
+ a:link, a:visited {
+
+	text-decoration: none;
+}
+
+a:hover {
+
+	text-decoration: underline;
+}
+
+
+
 </style>
 <body>
-	<header>
-		<div id="header">
-	<img src="images/gradient-geometric-shape-background_78532-374.jpg" style="width:100%;" id="backgroundimage">
-	<div class="textinthemiddle">Creating everything for our customer needs</div>
-		</div>
+	<header id="navigationbar">
+		<a href="../main page.html">Home</a>
+		<a href="../products.html">Products</a>
+		<a href="../photo gallery.html">Photo Gallery</a>
+		<a href="../contact us.html">Contact us</a>
 	</header>
-	<div id="findoutmore"></div>
+
+<div id="welcome">
+	<img src="images/man-working-printing-house-with-paper-paints.jpg" style="width:100%;" id="backgroundimage">
+	<div class="Welcome_to">Welcome to</div>
+	<div id="Companyname"><span>Sensus Plus</span></div>
+		</div>
+	
 	
 
 </body>
